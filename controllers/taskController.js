@@ -96,6 +96,7 @@ export const getTasksByOrganization = async (req, res) => {
 
         return res.status(200).json({
             message: "Tasks fetched successfully",
+            tasks: tasks,
             status: true,
         });
 

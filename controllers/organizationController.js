@@ -66,6 +66,7 @@ export const getUserOrganization = async (req, res) => {
         // console.log(organizations);
         return res.status(201).json({
             success: true,
+            organizations: organizations,
             message: "All organization details are received",
         });
 
@@ -101,6 +102,7 @@ export const getOrganizations = async (req, res) => {
 
         return res.status(201).json({
             message: "Perticular Organization details are received",
+            organization: organization,
             success: true,
         });
 

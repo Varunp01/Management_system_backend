@@ -74,6 +74,7 @@ export const Login = async (req,res)=>{
         };
         return res.status(201).cookie("token", token, cookieOptions).json({
             message: `${user.name} Logged in Successfully`,
+            user: user,
             success: true
         })
     } catch (error) {
