@@ -61,7 +61,7 @@ export const getUserOrganization = async (req, res) => {
 
         const organizations = await Organization.find({
             _id: { $in: organizationIds }
-        });
+        }).populate('createdBy', 'name email');
 
         // console.log(organizations);
         return res.status(201).json({
