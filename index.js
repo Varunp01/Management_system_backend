@@ -19,9 +19,9 @@ app.use(express.json());
 
 import cors from 'cors';
 const corsOptions = {
-    origin: ["http://localhost:5173", "https://management-system-backend.vercel.app"],
-  methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-  credentials: true
+    origin: 'https://management-system-backend.vercel.app',
+    origin: 'http://localhost:5173',
+    credentials: true,
 };
 app.use(cors(corsOptions));
 
