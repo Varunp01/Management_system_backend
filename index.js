@@ -21,7 +21,7 @@ import cors from 'cors';
 const corsOptions = {
     // origin: 'https://management-system-backend.vercel.app',
     origin: [
-        'https://management-system-frontend.vercel.app',
+        'https://management-system-frontend-silk.vercel.app',
         'http://localhost:5173'
     ],
     credentials: true,
