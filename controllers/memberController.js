@@ -59,7 +59,7 @@ export const addMemberToOrganization = async (req, res) => {
 
         return res.status(201).json({
             message: "Member Added successfully",
-            success: true
+            status: true
         });
     } catch (error) {
         console.log("addMemberToOrganization: ", error);
