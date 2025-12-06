@@ -12,5 +12,13 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    avatarFileName: {
+        type: String,
+        required: true
+    },
+    avatarFilePath: {
+        type: String,
+        required: true
+    },
 }, { timestamps: true });
 export const User = mongoose.model("User", userSchema);

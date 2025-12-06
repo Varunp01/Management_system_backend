@@ -44,6 +44,9 @@ app.use("/api/v1/org",MemberRoutes);
 import TaskRoutes from "./routes/TaskRoutes.js";
 app.use("/api/v1/org",TaskRoutes);
 
+import multerfileRoutes from "./routes/multerfileRoutes.js";
+app.use("/api", multerfileRoutes);
+
 app.listen(process.env.PORT, () => {
     console.log("server started", process.env.PORT);
 });
